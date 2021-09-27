@@ -1,13 +1,13 @@
-package pe.edu.upeu.actividad01;
+package pe.edu.upeu.parcial01;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Lp2Clase02G2Application {
+public class parcial01Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lp2Clase02G2Application.class, args);
+		SpringApplication.run(parcial01Application.class, args);
 	}
 
 }

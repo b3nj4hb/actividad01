@@ -1,6 +1,5 @@
-package pe.edu.upeu.actividad01.model;
+package pe.edu.upeu.parcial01.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,13 +16,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "posts")
-public class Post {
+@Table(name = "paciente")
+public class Paciente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long idpost;
-	@Column(name = "titulo")
-	private String titulo;
-	@Column(name = "descripcion")
-	private String descripcion;
+	private long idpaciente;
+
+	private String dni;
+	private String nombres;
+	private String apellidos;
+	private String direccion;
+	private String telefono;
+
 }

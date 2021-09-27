@@ -1,30 +1,30 @@
-package pe.edu.upeu.actividad01.service;
+package pe.edu.upeu.parcial01.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pe.edu.upeu.actividad01.model.Escuela;
-import pe.edu.upeu.actividad01.repository.EscuelaRepository;
+import pe.edu.upeu.parcial01.model.Paciente;
+import pe.edu.upeu.parcial01.repository.PacienteRepository;
 @Service
-public class EscuelaService implements SEscuela{
+public class PacienteService implements SPaciente{
 @Autowired
-private EscuelaRepository productoRepository;
+private PacienteRepository productoRepository;
 	@Override
-	public Escuela create(Escuela p) {
+	public Paciente create(Paciente p) {
 		// TODO Auto-generated method stub
 		return productoRepository.save(p);
 	}
 
 	@Override
-	public List<Escuela> readAll() {
+	public List<Paciente> readAll() {
 		// TODO Auto-generated method stub
 		return productoRepository.findAll();
 	}
 
 	@Override
-	public Escuela read(Long id) {
+	public Paciente read(Long id) {
 		// TODO Auto-generated method stub
 		return productoRepository.findById(id).get();
 	}
@@ -37,7 +37,7 @@ private EscuelaRepository productoRepository;
 	}
 
 	@Override
-	public Escuela update(Escuela p) {
+	public Paciente update(Paciente pe) {
 		// TODO Auto-generated method stub
 		return null;
 	}

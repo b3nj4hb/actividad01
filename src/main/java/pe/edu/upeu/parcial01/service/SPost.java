@@ -1,8 +1,8 @@
-package pe.edu.upeu.actividad01.service;
+package pe.edu.upeu.parcial01.service;
 
 import java.util.List;
 
-import pe.edu.upeu.actividad01.model.Post;
+import pe.edu.upeu.parcial01.model.Post;
 
 public interface SPost {
 	Post create(Post post);

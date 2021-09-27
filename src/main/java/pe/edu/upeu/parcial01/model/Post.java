@@ -1,4 +1,4 @@
-package pe.edu.upeu.actividad01.model;
+package pe.edu.upeu.parcial01.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,16 +11,19 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table (name="escuelas")
-public class Escuela {
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
-private long idescuela;
-@Column(name="nombre")
-private String nombre;
+@Table(name = "posts")
+public class Post {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long idpost;
+	@Column(name = "titulo")
+	private String titulo;
+	@Column(name = "descripcion")
+	private String descripcion;
 }

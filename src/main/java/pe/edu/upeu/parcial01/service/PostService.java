@@ -1,12 +1,12 @@
-package pe.edu.upeu.actividad01.service;
+package pe.edu.upeu.parcial01.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pe.edu.upeu.actividad01.model.Post;
-import pe.edu.upeu.actividad01.repository.PostRepository;
+import pe.edu.upeu.parcial01.model.Post;
+import pe.edu.upeu.parcial01.repository.PostRepository;
 
 @Service
 public class PostService implements SPost{
